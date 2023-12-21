@@ -253,7 +253,7 @@ def save_vcal_files(vcal_by_user, schedule):
     os.makedirs("output", exist_ok=True)
     for p0, vcal_files in vcal_by_user.items():
         for idx, mesh_invite in enumerate(vcal_files):
-            with open(f"output/{schedule[p0]['name']}_{idx}.ics", "w") as f:
+            with open(f"output/{schedule[p0]['name']}_{idx}.vcs", "w") as f:
                 f.write(mesh_invite.serialize())
 
 # Main function
