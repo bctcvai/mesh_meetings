@@ -49,9 +49,12 @@ robert.smith@example.com:
 
 The output is the directory where the vCal files will be saved.
 
-### Example Schedule
+## Future Work
 
-
+- Hooking up to an e-mail or calendar API may be useful for larger organizations.
+- Per-user customizations on desired meeting frequency
+- Titles, Descriptions, available for iCal creation. This facilitiates and "cold meetings."
+- Improved matching algorithm
 
 ## License
 This project is licensed under the BSD 3-Clause License. See the LICENSE file for details.
