@@ -2,6 +2,12 @@
 
 This Python script is used to schedule Mesh Meetings™ between participants based on their availability.
 
+## What is a Mesh Meeting?
+
+A Mesh Meeting™ is built upon the idea of increasing collaboration and communication through intentionally scheduled but unstructured meetings. The concept can be used in geographically diverse remote teams, but may also provide value to in-person teams. A twist on the idea of "getting everyone in the same room", this scheduling tactic matches pairs of people based on their availability over the course of time.
+
+Through short scheduled meetings team members can collaborate, socialize, or otherwise uncover roadblocks not addressed in traditional team meetings. Depending on the depth of the team in the mesh, the meetings can also serve as brief mentoring opportunities up and down the leadership ranks. Additional breadth to the mesh can provide learning opportunities for mesh members who may interact with someone they may not have organically.
+
 ## How it works
 
 1. It first sets up the names and emails of all participants.
@@ -15,7 +21,7 @@ The output of the script is a set of vCal files, one for each scheduled meeting,
 ## Usage
 
 ```shell
-$> python mesh_meeting.py schedule.yaml output
+python mesh_meeting.py schedule.yaml output
 ```
 Where schedule.yaml looks like:
 ```yaml
