@@ -53,7 +53,7 @@ The output is the directory where the vCal files will be saved.
 
 - Hooking up to an e-mail or calendar API may be useful for larger organizations.
 - Per-user customizations on desired meeting frequency
-- Titles, Descriptions, available for iCal creation. This facilitiates and "cold meetings."
+- Titles, descriptions, or comments available for iCal creation. This facilitiates any "cold meetings."
 - Improved matching algorithm
 
 ## License
