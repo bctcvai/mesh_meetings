@@ -104,11 +104,11 @@ def generate_time_slots():
     """
     time_slots = {}
     start_time = datetime.strptime("Monday 9:00am", "%A %I:%M%p")
-    end_time = start_time + timedelta(days=4) + timedelta(hours=4)
+    end_time = start_time + timedelta(days=4) + timedelta(hours=3)
     current_time = start_time
     while current_time < end_time:
         meeting_end_time = current_time + timedelta(minutes=15)
-        if (current_time.hour <= 17 and current_time.hour >= 9):
+        if (current_time.hour < 17 and current_time.hour >= 9):
             time_slots[f"{current_time.strftime('%A %I:%M%p')}-{meeting_end_time.strftime('%I:%M%p')}"] = set()
         current_time = meeting_end_time
     return time_slots
