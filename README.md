@@ -10,11 +10,10 @@ Through short scheduled meetings team members can collaborate, socialize, or oth
 
 ## How it works
 
-1. It first sets up the names and emails of all participants.
-2. It then defines the availability of each participant in terms of time ranges on specific days of the week.
-3. The script converts these time ranges into datetime objects for easier manipulation.
-4. It generates a vCalendar (vCal) file for a meeting between two people. The vCal file includes the start and end times of the meeting and the attendees.
-5. The script generates a list of time slots for the week, from Monday 9:00am to Friday 12pm.
+1. Setup a schedule.yaml file for the mesh participants.
+2. It  defines the emails, names, and availability of each participant in terms of time ranges on specific days of the week.
+3. The script extrapolates each availability segment into the full business week, in 15 minute intervals. This range is assumed to be 9am Monday to 12pm on Friday.
+4. In addition to a text output of all proposed meetings, it generates a vCalendar (vCal) file for a meeting between two people. The vCal file includes the start and end times of the meeting and the attendees.
 
 The output of the script is a set of vCal files, one for each scheduled meeting, which can be imported into a calendar application.
 
