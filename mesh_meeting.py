@@ -154,7 +154,7 @@ def calculate_matches(time_slots):
             potential_matches.append(slot)
     return potential_matches
 
-def generate_meetings(potential_matches):
+def generate_meetings(time_slots, potential_matches):
     """
     Generate meetings between potential matches.
 
@@ -294,6 +294,6 @@ if __name__ == "__main__":
     time_slots = generate_time_slots()
     time_slots = populate_time_slots(time_slots, schedule)
     potential_matches = calculate_matches(time_slots)
-    meetings = generate_meetings(potential_matches)
+    meetings = generate_meetings(time_slots, potential_matches)
     vcal_by_user = generate_vcal_files(meetings, schedule, relative_week, absolute_monday)
     save_vcal_files(vcal_by_user, schedule)
